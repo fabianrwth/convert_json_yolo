@@ -1,1 +1,4 @@
 data/*
+
+!data/images/screws_001.png
+!data/labels/screws_001.txt

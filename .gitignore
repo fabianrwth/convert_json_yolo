@@ -1,5 +1,6 @@
-data/*
-!data\mvtec_screws.json
+data/*.hdict
+data/*.json
+!data/mvtec_screws.json
 
 data/images/*
 !data/images/screws_001.png

@@ -49,7 +49,7 @@ def draw_bbox(image_path, annotations_path, draw_markers=False, save_image=False
             ymax = (float(y_center) + (float(bbox_height) / 2)) * height
 
             # Draw the bounding box on the image
-            cv2.rectangle(img, (int(xmin), int(ymin)), (int(xmax), int(ymax)), (255, 255, 0), 2)
+            cv2.rectangle(img, (int(xmin), int(ymin)), (int(xmax), int(ymax)), (0, 0, 255), thickness=4)
 
             if draw_markers:
                 # Draw the center point of the bounding box on the image
@@ -74,7 +74,7 @@ def draw_bbox(image_path, annotations_path, draw_markers=False, save_image=False
     cv2.destroyAllWindows()
 
     if save_image:
-        cv2.imwrite("output.jpg", img)
+        cv2.imwrite("output.jpg", cv2.resize(img, None, fx=0.5, fy=0.5))
 
 
 if __name__ == "__main__":

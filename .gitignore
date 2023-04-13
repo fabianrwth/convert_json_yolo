@@ -1,5 +1,9 @@
+data/*
+!data\mvtec_screws.json
+
 data/images/*
 !data/images/screws_001.png
 
 data/labels/*
 !data/labels/screws_001.txt
+

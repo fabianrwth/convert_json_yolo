@@ -1,3 +1,5 @@
+temp.*
+
 data/*.hdict
 data/*.json
 !data/mvtec_screws.json
